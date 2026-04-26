@@ -13,7 +13,7 @@ Contexto del producto Skully:
 - Módulos: autenticación 2FA, dashboard de métricas, exportación de datos, integraciones (Zendesk, Jira, Slack), base de conocimiento
 - Errores comunes: problemas de login (2FA, contraseña), lentitud (caché, extensiones del browser), errores de exportación (formatos, permisos)`;
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
