@@ -32,7 +32,7 @@ module.exports = async function handler(req, res) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": "sk-ant-api03-...",
+        "x-api-key": "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",
         "anthropic-version": "2023-06-01",
       },
       body: JSON.stringify({
