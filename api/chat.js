@@ -22,6 +22,7 @@ module.exports = async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).end();
 
   const { messages } = req.body;
+  console.log("KEY:", process.env.ANTHROPIC_API_KEY?.slice(0, 20));
   if (!messages || !Array.isArray(messages)) {
     return res.status(400).json({ error: "messages array required" });
   }
